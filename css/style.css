@@ -1,0 +1,2378 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* BODY */
+body {
+    background: #FFFFFF;
+    font-family: 'LatoLight';
+    font-size: 1rem;
+}
+
+/* FONTS */
+@font-face {
+    font-family: 'LetterMarker';
+    src: url("../files/fonts/letter-marker/letter-marker.ttf");
+}
+
+@font-face {
+    font-family: 'ImpactLabel';
+    src: url("../files/fonts/impact-label/impact-label.ttf");
+}
+
+/* PLEASE COMMENT IF NOT USING A MAC COMPUTER */
+@font-face {
+    font-family: 'LatoLight';
+    src: url("../files/fonts/lato/lato-thin.ttf");
+}
+
+/* PLEASE UNCOMMENT IF NOT USING A MAC COMPUTER */
+/* @font-face {
+    font-family: 'LatoLight';
+    src: url("../files/fonts/lato/lato-regular.ttf");
+} */
+
+@font-face {
+    font-family: 'LatoBlack';
+    src: url("../files/fonts/lato/lato-black.ttf");
+}
+
+@font-face {
+    font-family: 'JetBrainsMono';
+    src: url("../files/fonts/jet-brains-mono/jet-brains-mono-bold.ttf");
+}
+
+/* HEADINGS */
+h1 {
+    font-family: 'LetterMarker';
+    font-size: 40vw;
+    font-weight: normal;
+    color: white; 
+    line-height: 20vw;
+    text-align: center;
+    white-space: nowrap;
+
+    user-select: none;
+}
+
+.h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    width: 110vw;
+    padding-bottom: 6rem;
+}
+
+
+h2 {
+    font-family: 'LetterMarker';
+    font-size: 12.5rem;
+    font-weight: normal;
+    line-height: 7.5rem;
+    white-space: nowrap;
+}
+
+.h2 {
+    position: relative;
+}
+
+.h2 .coral {
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2.75rem;
+    z-index: 1;
+}
+
+.h2 .rose {
+    position: absolute;
+    top: 0.75rem;
+    left: 0.75rem;
+
+    display: flex;
+    flex-direction: column;
+    z-index: 0;
+}
+
+.h2 .coral h2 {
+    color: #FF4444;
+}
+
+.h2 .rose h2 {
+    color: #FFECEC;
+}
+
+
+h3 {
+    font-family: 'ImpactLabel';
+    font-size: 2.25rem;
+    font-weight: normal;
+    color: #262626;
+
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+
+    user-select: none;
+}
+
+.h3 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+}
+
+.h3 .foreground {
+    position: relative;
+    top: 0;
+    left: 0;
+
+    z-index: 2;
+}
+
+.h3 .middleground {
+    color: #ffffff;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    z-index: 1;
+}
+
+.h3 .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    z-index: 0;
+}
+
+
+h4 {
+    font-family: 'LatoLight';
+    font-size: 1.875rem;
+    font-weight: normal;
+    color: #FF4444;
+}
+
+
+h5 {
+    font-family: 'LatoBlack';
+    font-size: 1.25rem;
+    font-weight: normal;
+    color: #FF4444;
+}
+
+
+h6 {
+    font-family: 'LatoLight';
+    font-size: 1.125rem;
+    font-weight: normal;
+    color: #FF4444;
+
+    padding-bottom: 0.15rem;
+}
+
+
+strong {
+    font-family: 'LatoBlack';
+    font-weight: normal;
+}
+
+
+p {
+    font-family: 'LatoLight';
+    font-size: 1rem;
+    font-weight: normal;
+    color: #262626;
+}
+
+
+/* BUTTONS */
+button {
+    border: none;
+    cursor: pointer;
+    background: none;
+
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+
+    transition: box-shadow 0.3s;
+}
+
+button:hover { 
+    box-shadow: 0rem 0rem 10rem 5rem rgb(255, 68, 68, 0.5);
+}
+
+button h3 {
+    padding: 0;
+    text-align: left;
+}
+
+#call-to-action {
+    display: inline-block;
+    background-color: #FF4444;
+    border: none;
+    border-radius: 0.35rem;
+
+    color: #FFFFFF;
+    font-family: 'LatoBlack';
+    font-size: 1.325rem;
+
+    padding: 1.25rem 3rem;
+}
+
+#call-to-action:hover {
+    background-color: #FFFFFF;
+    color: #FF4444;
+    cursor: pointer;
+}
+
+#submit {
+    background-color: #FF4444;
+    border: none;
+    border-radius: 0.25rem;
+
+    color: #FFFFFF;
+    font-family: 'LatoBlack';
+    font-size: 1.125rem;
+
+    padding: 1.25rem 3rem;
+}
+
+#submit:hover {
+    box-shadow: none;
+    background-color: #FFECEC;
+    color: #FF4444;
+    cursor: pointer;
+}
+
+.slide {
+    cursor: pointer;
+}
+
+.slide:hover {
+    box-shadow: none;
+    cursor: pointer;
+}
+
+
+/* COLUMNS */
+.columns {
+    display: flex;
+    padding-left: 3.125rem;
+}
+
+.column-1, .column-2, .column-3 {
+    margin-right: 3.125rem;
+    width: 15rem;
+}
+
+.columns p {
+    padding-bottom: 0.75rem;
+}
+
+.columns ol, .columns ul {
+    font-size: 1rem;
+    padding-bottom: 0.75rem;
+    padding-left: 1.875rem;
+}
+
+.columns li {
+    font-size: 1rem;
+    line-height: 1.25rem;
+}
+
+
+/* LINKS */
+a {
+    color: #FF4444;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+
+/* SECTIONS */
+section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    overflow: hidden;
+}
+
+.our-mission, .we-come-to-you  {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.our-founder, .sessions {
+    padding-top: 2rem;
+    padding-bottom: 4.5rem;
+}
+
+.aim, .sponsors, .footer {
+    background-color: #FFECEC;
+}
+
+.states, .degrees, .intentions, .thank-you {   
+    background-color: #FFECEC;
+
+    margin-top: -6.25rem;
+
+    padding-top: calc(6.25rem + 2rem);
+    padding-bottom: 3rem;
+    padding-left: 6.25rem;
+    padding-right: 6.25rem;
+    
+    /* 100% VERTICAL-HEIGHT 
+        LESS MARGIN-TOP
+        LESS PADDING-TOP 
+        LESS PADDING-BOTTOM */
+    height: calc(100vh - 6.25rem - 2rem - 3rem);
+}
+
+.discover-your-degree, .form {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+
+    /* 100% VERTICAL-HEIGHT 
+        LESS HEIGHT (NAVIGATION BAR) 
+        LESS PADDING-TOP 
+        LESS PADDING-BOTTOM */
+    min-height: calc(100vh - 6.25rem - 2rem - 3rem);
+}
+
+
+/* IMAGES */
+.circle {
+    object-fit: cover;
+    clip-path: inset(0 round 50%);
+}
+
+
+/* ACCORDDIONS */
+.accordion-heading {
+    cursor: pointer;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+}
+
+.accordion-contents {
+    padding-top: 0.45rem;
+    padding-bottom: 2.25rem;
+    display: none;
+}
+
+.accordion-item.active .accordion-contents {
+    display: flex;
+}
+
+
+/* NAVIGATION */
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 6.25rem;
+
+    padding-left: 6.25rem;
+    padding-right: 6.25rem;
+}
+
+.navigation .pages {
+    display: flex;
+    justify-content: center;
+}
+
+.navigation .pages a {
+    margin-left: 3.125rem;
+}
+
+.navigation img {
+    width: 5.5rem;
+    height: 5.5rem;
+}
+
+.home .navigation .pages h6 {
+    color: #FFFFFF;
+}
+
+.navigation .pages a:hover {
+    text-decoration: none;
+}
+
+.navigation img {
+    margin-left: -1rem;
+}
+
+
+/* HOME: HEADER */
+.header {
+    background-image: url(../images/index/index-header.jpeg);
+    background-position: 92.5% 40%;
+    background-size: 127.5vw;
+    background-repeat: no-repeat;
+ 
+    margin-top: -6.25rem;
+    padding-top: 12rem;
+    padding-bottom: 5rem;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+/* HOME: AIM */
+.aim {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    padding-left: 12.5rem;
+    padding-right: 12.5rem;
+}
+
+.aim h4 {
+    max-width: 25rem;
+}
+
+
+/* HOME: DIVIDERS */
+.divider {
+    background-size: cover;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+.divider:nth-of-type(1) {
+    background-image: url(../images/index/index-divider-1.jpeg);
+    background-position: center;    
+}
+
+.divider:nth-of-type(2) {
+    background-image: url(../images/index/index-divider-2.jpeg);
+    background-position: center 35%;
+}
+
+
+/* HOME: EXPLORE CAREERS */
+.explore-careers {
+    background-image: url(../images/index/index-explore-careers-background.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 30rem;
+}
+
+.explore-careers .accordion-heading {
+    padding-left: 6.25rem;
+}
+
+.explore-careers .accordion-contents {
+    padding-left: 6.25rem;
+}
+
+
+/* HOME: HEAR IT FROM HER */
+.hear-it-from-her {
+    position: relative;
+    background-color: #FFFFFF;
+}
+
+.hear-it-from-her .logo {
+    position: absolute;
+    top: -25rem;
+    right: -10rem;
+
+    width: 65rem;
+    height: 65rem;
+
+    z-index: 0;
+}
+
+.carousel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+}
+
+.hear-it-from-her .arrows {
+    margin-left: -2.5rem;
+    margin-right: -2.5rem;
+
+    z-index: 2;
+}
+
+.carousel-item {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-left: 5rem;
+    margin-right: 5rem;
+
+    z-index: 1;
+}
+
+.carousel-item img {
+    width: 20rem;
+    height: 20rem;
+}
+
+.profile {
+    padding-top: 1.5rem;
+    padding-bottom: 2.5rem;
+}
+
+.profile h6, .discover-your-degree .courses h6 {
+    color: #262626; 
+}
+
+.carousel img {
+    margin-right: 3.125rem;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 35rem;
+}
+
+.profile .testimonial {
+    padding-top: 1.25rem;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+
+    user-select: none;
+}
+
+.dot {
+    margin: 0.35rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #FFECEC;
+    border-radius: 50%;
+}
+
+.dot.active {
+    background-color: #FF4444 !important;
+}
+
+.hear-it-from-her .dot {
+    cursor: pointer;
+}
+
+
+/* HOME: SPONSORS */
+.sponsors h5 {
+    text-align: center;
+}
+
+.sponsors p {
+    color: #FF4444;
+    text-align: center;
+
+    margin-bottom: 3.125rem;
+}
+
+.logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logos a {
+    position: relative;
+    display: inline-block;
+}
+
+.logos img {
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+    width: 10rem;
+    height: 10rem;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 1rem;
+
+    width: 10rem;
+    height: 10rem;
+
+    background-color: rgba(255, 255, 255, 0.35);
+    border-radius: 50%;
+    opacity: 0;
+
+    transition: opacity 0.25s ease;
+}
+
+.logos a:hover .overlay {
+    opacity: 1;
+}
+
+
+/* HOME: INSTAGRAM */
+.instagram {
+    position: relative;
+    background-color: #FFFFFF;
+}
+
+.instagram .logo {
+    position: absolute;
+    top: -2.5rem;
+    left: -12rem;
+    opacity: 25%; 
+
+    width: 40rem;
+    height: 40rem;
+}
+
+.instagram h3 {
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+}
+
+.row a {
+    position: relative;
+}
+
+.row img {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+
+    width: 20rem;
+}
+
+.caption {
+    position: absolute;
+    top: 0;
+    left: 1.25rem;
+   
+    width: 17.55rem;
+    height: 17.5rem;
+    
+    padding: 1.25rem;
+    
+    color: #FFFFFF;
+    text-align: center;
+
+    background-color: rgba(0, 0, 0, 0.75);
+    opacity: 0;
+
+    transition: opacity 0.25s ease;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.caption p {
+    color: #FFFFFF;
+    font-size: 0.825rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+}
+
+.row a:hover .caption {
+    opacity: 1;
+}
+
+
+
+/* WHO WE ARE */
+.background-image {
+    width: 30rem;
+    height: 37.5rem;
+    overflow: hidden;
+
+    position: absolute;
+    top: 15rem;
+    right: 0;
+}
+  
+.who-we-are .background-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 12.5%;
+}
+
+.professional-headshot {
+    align-self: flex-end;
+    margin-left: -7.5rem;
+    padding-bottom: 7.5rem;
+}
+
+.professional-headshot img {
+    padding-bottom: 0.25rem;
+
+    width: 12.5rem;
+}
+
+.professional-headshot p {
+    font-size: 0.85rem;
+    padding-bottom: 0rem;
+    padding-left: 0.25rem;
+}
+
+.professional-headshot p strong {
+    font-size: 1rem;
+}
+
+
+
+/* WHAT WE DO */
+.what-we-do .background-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 67.5%;
+}
+
+.what-we-do .accordion-heading {
+    display: flex;
+    flex-direction: row;
+}
+
+.session-number {
+    padding-right: 0.5rem;
+}
+
+
+
+/* WHERE TO STUDY */
+.states, .degrees, .intensions, .thank-you {
+    /* VIEWPORT WIDTH 
+            LESS PADDING-LEFT
+            LESS PADDING-RIGHT */
+    width: calc(100vw - 6.25rem - 6.25rem);
+}
+
+.where-to-study .footer, .degrees, .discover-your-degree {
+    display: none;
+}
+
+.states .selections, .degrees .select-degree {
+    position: absolute;
+    top: 15%;
+    left: calc(12% - 6.25rem);
+}
+
+.degrees .selected-state, .discover-your-degree .selections {
+    position: absolute;
+    top: 15%;
+    right: calc(12% - 6.25rem);
+    white-space: nowrap;
+    text-align: right;
+}
+
+.selections p {
+    color: #FF4444;
+}
+
+.clickables {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.where-to-study .controls, .contact-us .controls {
+    flex-direction: column;
+    
+    position: absolute;
+    top: 50%;
+    left: 97.5%;
+    transform: translate(-50%, -50%);
+}
+
+.states .dot, .degrees .dot, .intentions .dot {
+    background-color: #FFFFFF;
+}
+
+.where-to-study .arrows, .contact-us .arrows {
+    position: absolute;
+    top: 87.5%;
+    left: calc(12% - 6.25rem);
+}
+
+.courses {
+    display: flex;
+    flex-direction: column;
+
+    /* HEIGHT (DISCOVER-YOUR-DEGREE) 
+        LESS HEIGHT (H2) 
+        LESS HEIGHT (ARROWS) */
+    min-height:  calc((100vh - 6.25rem - 2rem - 4.5rem) - (15rem) - (3.25rem));
+}
+
+.course {
+    padding-bottom: 1.25rem;
+    padding-left: 3.125rem;
+}
+
+.course a {
+    font-size: 0.95rem;
+}
+
+.course p {
+    padding-bottom: 0.25rem;
+}
+
+
+
+/* CONTACT US */
+.intentions {
+    display: block;
+}
+
+.contact-us .footer, .form, .thank-you {
+    display: none;
+}
+
+.contact-us h3 {
+    text-align: right;
+}
+
+.contact-us .h3 .middleground, .contact-us .h3 .background {
+    right: 0;
+}
+
+form {
+    padding-left: 15rem;
+    padding-right: 15rem;
+    outline: none;
+    border: none;
+}
+
+form fieldset {
+    border: none;
+}
+
+.form-item {
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.form-item label {
+    font-size: 1rem;
+}
+
+.hidden {
+    display: none;
+}
+
+#form-name {
+    margin-top: 0;
+}
+
+.form-element {
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+
+form input, form textarea {
+    background-color: #F7F7F7;
+    border: none;
+    border-radius: 0.25rem; 
+
+    outline: none;
+
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+
+    height: 2.25rem; 
+    width: 100%;
+}
+
+#form-message {
+    height: 20rem;
+    padding: 0.5rem;
+}
+
+.thank-you {
+    background: #FFECEC
+}
+
+.thank-you p {
+    color: #FF4444;
+    text-align: center;
+    margin-top: 2.5rem;
+}
+
+
+
+/* FOOTER */
+.footer {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-direction: row;
+
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+
+.footer img {
+    margin-bottom: -1.5rem;
+    margin-left: -3rem;
+
+    width: 15rem;
+}
+
+.footer p {
+    color: #FF4444
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+
+    padding-top: 0.625rem;
+}
+
+.links .lhs, .links .rhs {
+    display: flex;
+    flex-direction: column;
+}
+
+.links .lhs {
+    text-align: right;
+}
+
+.links .rhs {
+    text-align: left;
+}
+
+
+
+
+/* MEDIA QUERIES */
+
+/* LAPTOP AT MAXIMUM WIDTH OF 1439 PX */
+@media only screen and (max-width: 1439px) {
+    /* HEADINGS */
+    .h1 {
+        padding-bottom: 4.266rem;
+    }
+
+
+    h2 {
+        font-size: 8.89rem;
+        line-height: 5.333rem;
+    }
+
+    .h2 .coral {
+        padding-bottom: 1.956rem;
+    }
+
+    .h2 .rose {
+        top: 0.533rem;
+        left: 0.533rem;
+    }
+
+
+    h3 {
+        font-size: 1.6rem;
+        padding-top: 0.356rem;
+        padding-bottom: 0.356rem;
+    }
+
+
+    h4 {
+        font-size: 1.333rem;
+    }
+
+
+    h5 {
+        font-size: 0.889rem;
+    }
+
+
+    h6 {
+        font-size: 0.8rem;
+        padding-bottom: 0.107rem;
+    }
+
+
+    p {
+        font-family: 'LatoLight';
+        font-size: 0.711rem;
+        font-weight: normal;
+        color: #262626;
+    }
+
+
+    /* BUTTONS */
+    button {
+        border: none;
+        cursor: pointer;
+        background: none;
+
+        margin-top: 0.356rem;
+        margin-bottom: 0.356rem;
+    }
+
+    button:hover { 
+        box-shadow: 0rem 0rem 7.11rem 3.555rem rgb(255, 68, 68, 0.5);
+    }
+
+    #call-to-action {
+        font-size: 0.933rem;
+        padding: 0.889rem 2.133rem;
+    }
+
+    #submit {
+        font-size: 0.8rem;
+        padding: 0.889rem 2.133rem;
+    }
+
+
+    /* COLUMNS */
+    .columns {
+        padding-left: 2.222rem;
+    }
+
+    .column-1, .column-2, .column-3 {
+        margin-right: 2.222rem;
+        width: 10.665rem;
+    }
+
+    .columns p {
+        padding-bottom: 0.533rem;
+    }
+
+    .columns ol, .columns ul {
+        font-size: 0.710rem;
+        padding-bottom: 0.533rem;
+        padding-left: 1.333rem;
+    }
+
+    .columns li {
+        font-size: 0.710rem;
+        line-height: 0.889rem;
+    }
+
+
+    /* SECTIONS */
+    section {
+        padding-top: 3.555rem;
+        padding-bottom: 3.555rem;
+        padding-left: 7.110rem;
+        padding-right: 7.110rem;
+    }
+
+    .our-mission, .we-come-to-you  {
+        padding-top: 1.422rem;
+        padding-bottom: 1.422rem;
+    }
+
+    .our-founder, .sessions {
+        padding-top: 1.422rem;
+        padding-bottom: 3.199rem;
+    }
+
+    .states, .degrees, .intentions, .thank-you {   
+        margin-top: -4.443rem;
+
+        padding-top: calc(4.443rem + 1.422rem);
+        padding-bottom: 2.133rem;
+        padding-left: 4.443rem;
+        padding-right: 4.443rem;
+        
+        /* 100% VERTICAL-HEIGHT 
+            LESS MARGIN-TOP
+            LESS PADDING-TOP 
+            LESS PADDING-BOTTOM */
+        height: calc(100vh - 4.443rem - 1.422rem - 2.133rem);
+    }
+
+    .discover-your-degree, .form {
+        padding-top: 2rem;
+        padding-bottom: 2.133rem;
+
+        /* 100% VERTICAL-HEIGHT 
+            LESS HEIGHT (NAVIGATION BAR) 
+            LESS PADDING-TOP 
+            LESS PADDING-BOTTOM */
+        min-height: calc(100vh - 4.443rem - 1.422rem - 2.133rem);
+    }
+
+
+    /* ACCORDDIONS */
+    .accordion-heading {
+        padding-top: 0.177rem;
+        padding-bottom: 0.177rem;
+    }
+
+    .accordion-contents {
+        padding-top: 0.32rem;
+        padding-bottom: 1.6rem;
+    }
+
+
+    /* NAVIGATION */
+    .navigation {
+        height: 4.443rem;
+        padding-left: 4.443rem;
+        padding-right: 4.443rem;
+    }
+
+    .navigation .pages a {
+        margin-left: 2.222rem;
+    }
+
+    .navigation img {
+        width: 3.91rem;
+        height: 3.91rem;
+    }
+
+    .navigation img {
+        margin-left: -0.710rem;
+    }
+
+
+    /* HOME: HEADER */
+    .header {
+        margin-top: -4.443rem;
+        padding-top: 8.531rem;
+        padding-bottom: 3.555rem;
+    }
+
+
+    /* HOME: AIM */
+    .aim {
+        padding-top: 7.110rem;
+        padding-bottom: 7.110rem;
+        padding-left: 8.887rem;
+        padding-right: 8.887rem;
+    }
+
+    .aim h4 {
+        max-width: 17.773rem;
+    }
+
+
+    /* HOME: DIVIDERS */
+    .divider {
+        background-size: cover;
+        padding-top: 7.110rem;
+        padding-bottom: 7.110rem;
+    }
+
+
+    /* HOME: EXPLORE CAREERS */
+    .explore-careers {
+        background-size: 17.773rem;
+    }
+
+    .explore-careers .accordion-heading {
+        padding-left: 4.443rem;
+    }
+
+    .explore-careers .accordion-contents {
+        padding-left: 4.443rem;
+    }
+
+
+    /* HOME: HEAR IT FROM HER */
+    .hear-it-from-her .logo {
+        top: -17.773rem;
+        right: -7.110rem;
+
+        width: 46.210rem;
+        height: 46.210rem;
+    }
+
+    .carousel {
+        padding-top: 0.889rem;
+        padding-bottom: 0.889rem;
+    }
+
+    .hear-it-from-her .arrows {
+        margin-left: -1.777rem;
+        margin-right: -1.777rem;
+    }
+
+    .carousel-item {
+        margin-left: 3.555rem;
+        margin-right: 3.555rem;
+    }
+
+    .carousel-item img {
+        width: 14.223rem;
+        height: 14.223rem;
+    }
+
+    .profile {
+        padding-top: 1.066rem;
+        padding-bottom: 1.777rem;
+    }
+
+    .carousel img {
+        margin-right: 1.777rem;
+    }
+
+    .profile {
+        width: 24.883rem;
+    }
+
+    .profile .testimonial {
+        padding-top: 0.889rem;
+    }
+
+    .dot {
+        margin: 0.249rem;
+        width: 0.360rem;
+        height: 0.360rem;
+    }
+
+
+    /* HOME: SPONSORS */
+    .sponsors p {
+        margin-bottom: 2.222rem;
+    }
+
+    .logos img {
+        margin-left: 0.710rem;
+        margin-right: 0.710rem;
+
+        width: 7.109rem;
+        height: 7.109rem;
+    }
+
+    .overlay {
+        top: 0;
+        left: 0.710rem;
+
+        width: 7.109rem;
+        height: 7.109rem;
+    }
+
+
+    /* HOME: INSTAGRAM */
+    .instagram .logo {
+        position: absolute;
+        top: -1.777rem;
+        left: -8.531rem;
+        opacity: 25%; 
+
+        width: 28.437rem;
+        height: 28.437rem;
+    }
+
+    .row {
+        padding-top: 0.889rem;
+        padding-bottom: 0.889rem;
+    }
+
+    .row img {
+        padding-left: 0.889rem;
+        padding-right: 0.889rem;
+
+        width: 14.219rem;
+    }
+
+    .caption {
+        position: absolute;
+        top: 0;
+        left: 0.889rem;
+       
+        width: 12.441rem;
+        height: 12.441rem;
+        
+        padding: 0.888rem;
+    }
+    
+    .caption p {
+        font-size: 0.587rem;
+        padding-top: 0.177rem;
+        padding-bottom: 0.177rem;
+    }
+
+
+
+    /* WHO WE ARE */
+    .background-image {
+        width: 21.328rem;
+        height: 26.66rem;
+
+        top: 10.664rem;
+    }
+
+    .professional-headshot {
+        margin-left: -5.333rem;
+        padding-bottom: 5.333rem;
+    }
+
+    .professional-headshot img {
+        padding-bottom: 0.177rem;
+        width: 8.886rem;
+    }
+
+    .professional-headshot p {
+        font-size: 0.604rem;
+        padding-bottom: 0rem;
+        padding-left: 0.177rem;
+    }
+
+    .professional-headshot p strong {
+        font-size: 0.710rem;
+    }
+
+
+
+    /* WHAT WE DO */
+    .session-number {
+        padding-right: 0.356rem;
+    }
+
+
+
+    /* WHERE TO STUDY */
+    .states, .degrees, .intensions, .thank-you {
+        /* VIEWPORT WIDTH 
+                LESS PADDING-LEFT
+                LESS PADDING-RIGHT */
+        width: calc(100vw - 4.443rem - 4.443rem);
+    }
+
+    .states .selections, .degrees .select-degree {
+        left: calc(12% - 4.443rem);
+    }
+
+    .degrees .selected-state, .discover-your-degree .selections {
+        right: calc(12% - 4.443rem);
+    }
+
+    .where-to-study .arrows, .contact-us .arrows {
+        left: calc(12% - 4.443rem);
+    }
+
+    .courses {
+        /* HEIGHT (DISCOVER-YOUR-DEGREE) 
+            LESS HEIGHT (H2) 
+            LESS HEIGHT (ARROWS) */
+        min-height:  calc((100vh - 4.443rem - 1.442rem - 3.2rem) - (10.664rem) - (2.310rem));
+    }
+
+    .course {
+        padding-bottom: 0.889rem;
+        padding-left: 2.222rem;
+    }
+
+    .course a {
+        font-size: 0.676rem;
+    }
+
+    .course p {
+        padding-bottom: 0.177rem;
+    }
+
+
+
+    /* CONTACT US */
+    form {
+        padding-left: 10.664rem;
+        padding-right: 10.664rem;
+    }
+
+    .form-item {
+        margin-top: 0.533rem;
+        margin-bottom: 0.533rem;
+    }
+
+    .form-item label {
+        font-size: 0.710rem;
+    }
+
+    .form-element {
+        margin-top: 0.177rem;
+        margin-bottom: 0.177rem;
+    }
+
+    form input, form textarea {
+        padding-left: 0.356rem;
+        padding-right: 0.356rem;
+
+        height: 1.6rem; 
+    }
+
+    #form-message {
+        height: 14.219rem;
+        padding: 0.356rem;
+    }
+
+    .thank-you p {
+        margin-top: 1.777rem;
+    }
+
+
+
+    /* FOOTER */
+    .footer {
+        padding-top: 3.555rem;
+        padding-bottom: 3.555rem;
+        padding-left: 7.110rem;
+        padding-right: 7.110rem;
+    }
+
+    .footer img {
+        margin-bottom: -1.066rem;
+        margin-left: -2.133rem;
+
+        width: 10.664rem;
+    }
+
+    .links {
+        padding-top: 0.444rem;
+    }
+}
+
+
+
+/* TABLET AT MAXIMUM WIDTH OF 1023 PX */
+@media only screen and (max-width: 1023px) {
+    /* HEADINGS */
+    .h1 {
+        padding-bottom: 3.2rem;
+    }
+
+
+    h2 {
+        font-size: 6.67rem;
+        line-height: 4rem;
+    }
+
+    .h2 .coral {
+        padding-bottom: 1.467rem;
+    }
+
+    .h2 .rose {
+        top: 0.4rem;
+        left: 0.4rem;
+    }
+
+
+    h3 {
+        font-size: 1.2rem;
+        padding-top: 0.267rem;
+        padding-bottom: 0.267rem;
+    }
+
+
+    h4 {
+        font-size: 1rem;
+    }
+
+
+    h5 {
+        font-size: 0.667rem;
+    }
+
+
+    h6 {
+        font-size: 0.6rem;
+        padding-bottom: 0.08rem;
+    }
+
+
+    p {
+        font-family: 'LatoLight';
+        font-size: 0.5333rem;
+        font-weight: normal;
+        color: #262626;
+    }
+
+
+    /* BUTTONS */
+    button {
+        border: none;
+        cursor: pointer;
+        background: none;
+
+        margin-top: 0.267rem;
+        margin-bottom: 0.267rem;
+    }
+
+    button:hover { 
+        box-shadow: 0rem 0rem 5.333rem 2.667rem rgb(255, 68, 68, 0.5);
+    }
+
+    #call-to-action {
+        font-size: 0.7rem;
+        padding: 0.667rem 1.6rem;
+    }
+
+    #submit {
+        font-size: 0.6rem;
+        padding: 0.667rem 1.6rem;
+    }
+
+
+    /* COLUMNS */
+    .columns {
+        padding-left: 1.667rem;
+    }
+
+    .column-1, .column-2, .column-3 {
+        margin-right: 1.667rem;
+        width: 8rem;
+    }
+
+    .columns p {
+        padding-bottom: 0.4rem;
+    }
+
+    .columns ol, .columns ul {
+        font-size: 0.533rem;
+        padding-bottom: 0.4rem;
+        padding-left: 1rem;
+    }
+
+    .columns li {
+        font-size: 0.533rem;
+        line-height: 0.667rem;
+    }
+
+
+    /* SECTIONS */
+    section {
+        padding-top: 2.667rem;
+        padding-bottom: 2.667rem;
+        padding-left: 5.333rem;
+        padding-right: 5.333rem;
+    }
+
+    .our-mission, .we-come-to-you  {
+        padding-top: 1.067rem;
+        padding-bottom: 1.067rem;
+    }
+
+    .our-founder, .sessions {
+        padding-top: 1.067rem;
+        padding-bottom: 2.4rem;
+    }
+
+    .states, .degrees, .intentions, .thank-you {   
+        margin-top: -3.333rem;
+
+        padding-top: calc(3.333rem + 1.067rem);
+        padding-bottom: 1.6rem;
+        padding-left: 3.333rem;
+        padding-right: 3.333rem;
+        
+        /* 100% VERTICAL-HEIGHT 
+            LESS MARGIN-TOP
+            LESS PADDING-TOP 
+            LESS PADDING-BOTTOM */
+        height: calc(100vh - 3.333rem - 1.067rem - 1.6rem);
+    }
+
+    .discover-your-degree, .form {
+        padding-top: 2rem;
+        padding-bottom: 1.6rem;
+
+        /* 100% VERTICAL-HEIGHT 
+            LESS HEIGHT (NAVIGATION BAR) 
+            LESS PADDING-TOP 
+            LESS PADDING-BOTTOM */
+        min-height: calc(100vh - 3.333rem - 1.067rem - 1.6rem);
+    }
+
+
+    /* ACCORDDIONS */
+    .accordion-heading {
+        padding-top: 0.133rem;
+        padding-bottom: 0.133rem;
+    }
+
+    .accordion-contents {
+        padding-top: 0.24rem;
+        padding-bottom: 1.2rem;
+    }
+
+
+    /* NAVIGATION */
+    .navigation {
+        height: 3.333rem;
+        padding-left: 3.333rem;
+        padding-right: 3.333rem;
+    }
+
+    .navigation .pages a {
+        margin-left: 1.667rem;
+    }
+
+    .navigation img {
+        width: 2.933rem;
+        height: 2.933rem;
+    }
+
+    .navigation img {
+        margin-left: -0.533rem;
+    }
+
+
+    /* HOME: HEADER */
+    .header {
+        margin-top: -3.333rem;
+        padding-top: 6.4rem;
+        padding-bottom: 2.667rem;
+    }
+
+
+    /* HOME: AIM */
+    .aim {
+        padding-top: 5.333rem;
+        padding-bottom: 5.333rem;
+        padding-left: 6.667rem;
+        padding-right: 6.667rem;
+    }
+
+    .aim h4 {
+        max-width: 13.333rem;
+    }
+
+
+    /* HOME: DIVIDERS */
+    .divider {
+        background-size: cover;
+        padding-top: 5.333rem;
+        padding-bottom: 5.333rem;
+    }
+
+
+    /* HOME: EXPLORE CAREERS */
+    .explore-careers {
+        background-size: 13.333rem;
+    }
+
+    .explore-careers .accordion-heading {
+        padding-left: 3.333rem;
+    }
+
+    .explore-careers .accordion-contents {
+        padding-left: 3.333rem;
+    }
+
+
+    /* HOME: HEAR IT FROM HER */
+    .hear-it-from-her .logo {
+        top: -13.333rem;
+        right: -5.333rem;
+
+        width: 34.665rem;
+        height: 34.665rem;
+    }
+
+    .carousel {
+        padding-top: 0.667rem;
+        padding-bottom: 0.667rem;
+    }
+
+    .hear-it-from-her .arrows {
+        margin-left: -1.333rem;
+        margin-right: -1.333rem;
+    }
+
+    .carousel-item {
+        margin-left: 2.667rem;
+        margin-right: 2.667rem;
+    }
+
+    .carousel-item img {
+        width: 10.667rem;
+        height: 10.667rem;
+    }
+
+    .profile {
+        padding-top: 0.8rem;
+        padding-bottom: 1.333rem;
+    }
+
+    .carousel img {
+        margin-right: 1.333rem;
+    }
+
+    .profile {
+        width: 18.667rem;
+    }
+
+    .profile .testimonial {
+        padding-top: 0.667rem;
+    }
+
+    .dot {
+        margin: 0.187rem;
+        width: 0.267rem;
+        height: 0.267rem;
+    }
+
+
+    /* HOME: SPONSORS */
+    .sponsors p {
+        margin-bottom: 1.667rem;
+    }
+
+    .logos img {
+        margin-left: 0.533rem;
+        margin-right: 0.533rem;
+
+        width: 5.333rem;
+        height: 5.333rem;
+    }
+
+    .overlay {
+        top: 0;
+        left: 0.533rem;
+
+        width: 5.333rem;
+        height: 5.333rem;
+    }
+
+    /* HOME: INSTAGRAM */
+    .instagram .logo {
+        position: absolute;
+        top: -1.333rem;
+        left: -6.4rem;
+        opacity: 25%; 
+
+        width: 21.333rem;
+        height: 21.333rem;
+    }
+
+    .row {
+        padding-top: 0.667rem;
+        padding-bottom: 0.667rem;
+    }
+
+    .row img {
+        padding-left: 0.667rem;
+        padding-right: 0.667rem;
+
+        width: 10.667rem;
+    }
+
+    .caption {
+        position: absolute;
+        top: 0;
+        left: 0.667rem;
+       
+        width: 9.333rem;
+        height: 9.333rem;
+        
+        padding: 0.666rem;
+    }
+    
+    .caption p {
+        font-size: 0.44rem;
+        padding-top: 0.133rem;
+        padding-bottom: 0.133rem;
+    }
+
+
+
+    /* WHO WE ARE */
+    .background-image {
+        width: 16rem;
+        height: 20rem;
+
+        top: 8rem;
+    }
+
+    .professional-headshot {
+        margin-left: -4rem;
+        padding-bottom: 4rem;
+    }
+
+    .professional-headshot img {
+        padding-bottom: 0.133rem;
+
+        width: 6.666rem;
+    }
+
+    .professional-headshot p {
+        font-size: 0.453rem;
+        padding-bottom: 0rem;
+        padding-left: 0.133rem;
+    }
+
+    .professional-headshot p strong {
+        font-size: 0.533rem;
+    }
+
+
+
+    /* WHAT WE DO */
+    .session-number {
+        padding-right: 0.267rem;
+    }
+
+
+
+    /* WHERE TO STUDY */
+    .states, .degrees, .intensions, .thank-you {
+        /* VIEWPORT WIDTH 
+                LESS PADDING-LEFT
+                LESS PADDING-RIGHT */
+        width: calc(100vw - 3.333rem - 3.333rem);
+    }
+
+    .states .selections, .degrees .select-degree {
+        left: calc(12% - 3.333rem);
+    }
+
+    .degrees .selected-state, .discover-your-degree .selections {
+        right: calc(12% - 3.333rem);
+    }
+
+    .where-to-study .arrows, .contact-us .arrows {
+        left: calc(12% - 3.333rem);
+    }
+
+    .courses {
+        /* HEIGHT (DISCOVER-YOUR-DEGREE) 
+            LESS HEIGHT (H2) 
+            LESS HEIGHT (ARROWS) */
+        min-height:  calc((100vh - 3.333rem - 1.067rem - 2.4rem) - (8rem) - (1.733rem));
+    }
+
+    .course {
+        padding-bottom: 0.667rem;
+        padding-left: 1.667rem;
+    }
+
+    .course a {
+        font-size: 0.507rem;
+    }
+
+    .course p {
+        padding-bottom: 0.133rem;
+    }
+
+
+
+    /* CONTACT US */
+    form {
+        padding-left: 8rem;
+        padding-right: 8rem;
+    }
+
+    .form-item {
+        margin-top: 0.4rem;
+        margin-bottom: 0.4rem;
+    }
+
+    .form-item label {
+        font-size: 0.533rem;
+    }
+
+    .form-element {
+        margin-top: 0.1333rem;
+        margin-bottom: 0.1333rem;
+    }
+
+    form input, form textarea {
+        padding-left: 0.267rem;
+        padding-right: 0.267rem;
+
+        height: 1.2rem; 
+    }
+
+    #form-message {
+        height: 10.667rem;
+        padding: 0.267rem;
+    }
+
+    .thank-you p {
+        margin-top: 1.333rem;
+    }
+
+
+
+    /* FOOTER */
+    .footer {
+        padding-top: 2.667rem;
+        padding-bottom: 2.667rem;
+        padding-left: 5.333rem;
+        padding-right: 5.333rem;
+    }
+
+    .footer img {
+        margin-bottom: -0.8rem;
+        margin-left: -1.6rem;
+
+        width: 8rem;
+    }
+
+    .links {
+        padding-top: 0.333rem;
+    }
+}
+
+
+
+/* MOBILE AT MAXIMUM WIDTH OF 767 PX */
+@media only screen and (max-width: 767px) {
+    /* HEADINGS */
+    .h1 {
+        padding-bottom: 1.6rem;
+    }
+
+    h2 {
+        font-size: 4.669rem;
+        line-height: 2.8rem;
+    }
+
+    .h2 .coral {
+        padding-bottom: 1.027rem;
+    }
+
+    .h2 .rose {
+        top: 0.28rem;
+        left: 0.28rem;
+    }
+
+
+    h3 {
+        font-size: 0.84rem;
+        padding-top: 0.134rem;
+        padding-bottom: 0.134rem;
+    }
+
+
+    h3 {
+        font-size: 0.84rem;
+        padding-top: 0.134rem;
+        padding-bottom: 0.134rem;
+    }
+
+
+    h4 {
+        font-size: 0.7rem;
+    }
+
+
+    h6 {
+        padding-bottom: 0.04rem;
+    }
+
+
+    /* COLUMNS */
+    .columns {
+        flex-direction: column;
+    }
+
+
+    /* SECTIONS */
+    section {
+        padding-top: 1.334rem;
+        padding-bottom: 1.334rem;
+        padding-left: 2.667rem;
+        padding-right: 2.667rem;
+    }
+
+    .our-mission, .we-come-to-you  {
+        padding-top: 0.534rem;
+        padding-bottom: 0.534rem;
+    }
+
+    .our-founder, .sessions {
+        padding-top: 0.534rem;
+        padding-bottom: 1.2rem;
+    }
+
+    .states, .degrees, .intentions, .thank-you {   
+        margin-top: -1.667rem;
+
+        padding-top: calc(1.667rem + 0.534rem);
+        padding-bottom: 0.8rem;
+        padding-left: 1.667rem;
+        padding-right: 1.667rem;
+        
+        /* 100% VERTICAL-HEIGHT 
+            LESS MARGIN-TOP
+            LESS PADDING-TOP 
+            LESS PADDING-BOTTOM */
+        height: calc(100vh - 1.667rem - 0.534rem - 0.8rem);
+    }
+
+    .discover-your-degree, .form {
+        padding-top: 2rem;
+        padding-bottom: 0.8rem;
+
+        /* 100% VERTICAL-HEIGHT 
+            LESS HEIGHT (NAVIGATION BAR) 
+            LESS PADDING-TOP 
+            LESS PADDING-BOTTOM */
+        min-height: calc(100vh - 1.667rem - 0.534rem - 0.8rem);
+    }
+
+
+    /* ACCORDDIONS */
+    .accordion-heading {
+        padding-top: 0.067rem;
+        padding-bottom: 0.067rem;
+    }
+
+    .accordion-contents {
+        padding-top: 0.12rem;
+        padding-bottom: 0.6rem;
+    }
+
+
+    /* NAVIGATION */
+    .navigation {
+        height: 1.667rem;
+        padding-left: 1.667rem;
+        padding-right: 1.667rem;
+    }
+
+    .navigation .pages a {
+        margin-left: 0.833rem;
+    }
+
+    .navigation img {
+        width: 1.467rem;
+        height: 1.467rem;
+    }
+
+    .navigation img {
+        margin-left: -0.267rem;
+    }
+
+
+    /* HOME: HEADER */
+    .header {
+        margin-top: -1.667rem;
+        padding-top: 3.2rem;
+        padding-bottom: 1.334rem;
+    }
+
+
+    /* HOME: AIM */
+    .aim {
+        padding-top: 2.667rem;
+        padding-bottom: 2.667rem;
+        padding-left: 3.334rem;
+        padding-right: 3.334rem;
+    }
+
+    .aim h4 {
+        max-width: 10rem;
+    }
+
+
+    /* HOME: DIVIDERS */
+    .divider {
+        background-size: cover;
+        padding-top: 2.667rem;
+        padding-bottom: 2.667rem;
+    }
+
+
+    /* HOME: EXPLORE CAREERS */
+    .explore-careers {
+        background-size: 8rem;
+    }
+
+    .explore-careers .accordion-heading {
+        padding-left: 1.667rem;
+    }
+
+    .explore-careers .accordion-contents {
+        padding-left: 1.667rem;
+    }
+
+
+    /* HOME: HEAR IT FROM HER */
+    .hear-it-from-her .logo {
+        top: -6.667rem;
+        right: -2.667rem;
+
+        width: 17.334rem;
+        height: 17.334rem;
+    }
+
+    .carousel {
+        padding-top: 0.334rem;
+        padding-bottom: 0.334rem;
+    }
+
+    .hear-it-from-her .arrows {
+        margin-left: -0.25rem;
+        margin-right: -0.25rem;
+    }
+
+    .carousel-item {
+        flex-direction: column;
+
+        margin-left: 1.334rem;
+        margin-right: 1.334rem;
+    }
+
+    .carousel-item img {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .profile {
+        padding-top: 0.4rem;
+        padding-bottom: 0.667rem;
+    }
+
+    .carousel img {
+        margin-right: 0;
+    }
+
+    .profile {
+        width: 12rem;
+    }
+
+    .profile .testimonial {
+        padding-top: 0.334rem;
+    }
+
+    .dot {
+        margin: 0.187rem;
+        width: 0.267rem;
+        height: 0.267rem;
+    }
+
+
+    /* HOME: SPONSORS */
+    .sponsors p {
+        margin-bottom: 0.834rem;
+    }
+
+    .logos img {
+        margin-left: 0.267rem;
+        margin-right: 0.267rem;
+
+        width: 2.667rem;
+        height: 2.667rem;
+    }
+
+    .overlay {
+        top: 0;
+        left: 0.267rem;
+
+        width: 2.667rem;
+        height: 2.667rem;
+    }
+
+    /* HOME: INSTAGRAM */
+    .instagram .logo {
+        position: absolute;
+        top: -0.667rem;
+        left: -3.2rem;
+        opacity: 25%; 
+
+        width: 10.667rem;
+        height: 10.667rem;
+    }
+
+    .row {
+        padding-top: 0.334rem;
+        padding-bottom: 0.334rem;
+    }
+
+    .row img {
+        padding-left: 0.334rem;
+        padding-right: 0.334rem;
+
+        width: 5.334rem;
+    }
+
+    .caption {
+        position: absolute;
+        top: 0;
+        left: 0.334rem;
+       
+        width: 4.667rem;
+        height: 4.667rem;
+        
+        padding: 0.334rem;
+    }
+    
+    .caption p {
+        font-size: 0.25rem;
+        padding-top: 0.067rem;
+        padding-bottom: 0.067rem;
+    }
+
+
+
+    /* WHO WE ARE */
+    .background-image {
+        width: 8rem;
+        height: 10rem;
+
+        top: 4rem;
+    }
+
+    .professional-headshot {
+        margin-left: -4rem;
+        padding-bottom: 4rem;
+    }
+
+    .professional-headshot img {
+        padding-bottom: 0.133rem;
+        width: 6.666rem;
+    }
+
+
+
+    /* WHAT WE DO */
+    .session-number {
+        padding-right: 0.133rem;
+    }
+
+
+
+    /* WHERE TO STUDY */
+    .states, .degrees, .intensions, .thank-you {
+        /* VIEWPORT WIDTH 
+                LESS PADDING-LEFT
+                LESS PADDING-RIGHT */
+        width: calc(100vw - 1.667rem - 1.667rem);
+    }
+
+    .states .selections, .degrees .select-degree {
+        left: calc(12% - 1.667rem);
+    }
+
+    .degrees .selected-state {
+        right: calc(12% - 1.667rem);
+    }
+
+    .discover-your-degree .selections {
+        display: none;
+    }
+
+    .where-to-study .arrows, .contact-us .arrows {
+        left: calc(12% - 1.667rem);
+    }
+
+    .courses {
+        /* HEIGHT (DISCOVER-YOUR-DEGREE) 
+            LESS HEIGHT (H2) 
+            LESS HEIGHT (ARROWS) */
+        min-height:  calc((100vh - 1.667rem - 1.534rem - 1.2rem) - (4rem) - (0.887rem));
+    }
+
+    .course {
+        padding-bottom: 0.334rem;
+        padding-left: 0.834rem;
+    }
+
+    .course p {
+        padding-bottom: 0.067rem;
+    }
+
+    
+    /* CONTACT US */
+    form {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .form-item {
+        margin-top: 0.2rem;
+        margin-bottom: 0.2rem;
+    }
+
+    .form-item label {
+        font-size: 0.267rem;
+    }
+
+    .form-element {
+        margin-top: 0.067rem;
+        margin-bottom: 0.067rem;
+    }
+
+    form input, form textarea {
+        padding-left: 0.134rem;
+        padding-right: 0.134rem;
+
+        height: 0.6rem; 
+    }
+
+    #form-message {
+        height: 5.334rem;
+        padding: 0.134rem;
+    }
+
+    .thank-you p {
+        margin-top: 0.667rem;
+    }
+
+
+
+    /* FOOTER */
+    .footer {
+        padding-top: 1.334rem;
+        padding-bottom: 1.334rem;
+        padding-left: 2.667rem;
+        padding-right: 2.667rem;
+    }
+
+    .footer img {
+        margin-bottom: -0.4rem;
+        margin-left: -0.8rem;
+
+        width: 4rem;
+    }
+
+    .links {
+        padding-top: 0.167rem;
+    }
+}

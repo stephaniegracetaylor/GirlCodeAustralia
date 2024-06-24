@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>
+			Contact Us
+		</title>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+
+	<!-- CONTACT US -->
+    <body class="contact-us">
+
+		<!-- NAVIGATION -->
+		<nav class="navigation">
+			
+			<!-- LOGO -->
+			<a href="index.html">
+				<img src="images/navigation/logo-coral.png" alt="Girl Code Australia">
+			</a>
+
+			<!-- PAGES -->
+			<nav class="pages">
+
+				<!-- WHO WE ARE -->
+				<a href="who-we-are.html">
+                    <h6>
+                        WHO WE ARE
+                    </h6>
+				</a>
+
+				<!-- WHAT WE DO -->
+				<a href="what-we-do.html">
+                    <h6>
+                        WHAT WE DO 
+                    </h6>
+				</a>
+
+				<!-- WHERE TO STUDY -->
+				<a href="where-to-study.html">
+                    <h6>
+                        WHERE TO STUDY
+                    </h6>
+				</a>
+			</nav>
+		</nav>
+
+
+		<!-- SECTION: INTENTIONS -->
+        <section class="intentions">
+
+            <!-- CLICKABLES -->
+            <div class="clickables">
+
+                <button class="go-to-form" id="contact">
+
+                    <!-- CONTACT US -->
+                    <div class="h3">
+
+                        <!-- FOREGROUND -->
+                        <h3 class="foreground">
+                            &nbsp;CONTACT US&nbsp;
+						</h3>
+
+						<!-- MIDDLEGROUND -->
+                        <h3 class="middleground">
+                    		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </h3>
+
+						<!-- BACKGROUND -->
+                        <h3 class="background">
+                    		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </h3>
+                    </div>
+                </button>
+
+				<button class="go-to-form" id="sponsor">
+
+                    <!-- SPONSOR US -->
+                    <div class="h3">
+
+                        <!-- FOREGROUND -->
+                        <h3 class="foreground">
+                            &nbsp;SPONSOR US&nbsp;
+						</h3>
+
+						<!-- MIDDLEGROUND -->
+                        <h3 class="middleground">
+                    		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </h3>
+
+						<!-- BACKGROUND -->
+                        <h3 class="background">
+                    		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </h3>
+                    </div>
+                </button>
+
+				<button class="go-to-form" id="volunteer">
+
+                    <!-- VOLUNTEER WITH US -->
+                    <div class="h3">
+
+                        <!-- FOREGROUND -->
+                        <h3 class="foreground">
+                            &nbsp;VOLUNTEER WITH US&nbsp;
+                        </h3>
+
+                        <!-- MIDDLEGROUND -->
+                        <h3 class="middleground">
+                    		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						</h3>
+
+						<!-- BACKGROUND -->
+                        <h3 class="background">
+                    		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </h3>
+                    </div>
+                </button>
+
+				<button class="go-to-form" id="work">
+
+                    <!-- WORK WITH US -->
+                    <div class="h3">
+
+                        <!-- FOREGROUND -->
+                        <h3 class="foreground">
+                            &nbsp;WORK WITH US&nbsp;
+                        </h3>
+
+						<!-- MIDDLEGROUND -->
+                        <h3 class="middleground">
+                    		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </h3>
+
+						<!-- BACKGROUND -->
+                        <h3 class="background">
+                    		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </h3>
+                    </div>
+                </button>
+            </div>
+
+            <!-- CONTROLS -->
+            <div class="controls">
+                <div class="dot active"></div>
+                <div class="dot"></div>
+			</div>
+        </section>
+
+
+		<!-- SECTION: FORM -->
+		<section class="form">
+
+			 <!-- HEADING -->
+			 <div class="h2">
+
+                <!-- CORAL -->
+                <div class="coral">
+                    <h2 class="selected-intention-1">
+                        CONTACT
+                    </h2>
+                    <h2 class="selected-intention-2">
+                        US
+                    </h2>
+                </div>
+
+                <!-- ROSE -->
+                <div class="rose">
+                    <h2 class="selected-intention-1">
+                        CONTACT
+                    </h2>
+                    <h2 class="selected-intention-2">
+                        US
+                    </h2>
+                </div>
+            </div>
+
+
+			<!-- FORM -->
+			<form id="form" onsubmit="handleSubmit(event)">
+
+			    <fieldset>
+
+					<!-- NAME -->
+			        <div class="form-item">
+				        <label for="form-name">
+							Name*
+						</label>
+				        <div class="form-element">
+				        	<input type="text" name="name" id="form-name">
+				        </div>
+			        </div>
+
+					<!-- ROLE -->
+                    <div class="form-item">
+				        <label for="form-role">
+							Role*
+						</label>
+				        <div class="form-element">
+				        	<input type="text" name="role" id="form-role">
+				        </div>
+			        </div>
+
+					<!-- COMPANY -->
+                    <div class="form-item">
+				        <label for="form-company">
+							Company*
+						</label>
+				        <div class="form-element">
+				        	<input type="text" name="company" id="form-company">
+				        </div>
+			        </div>
+
+					<!-- DEGREE -->
+                    <div class="form-item">
+				        <label for="form-degree">
+							Degree (Majors and Minors)*
+						</label>
+				        <div class="form-element">
+				        	<input type="text" name="degree" id="form-degree">
+				        </div>
+			        </div>
+
+					<!-- INSTITUTION -->
+                    <div class="form-item">
+				        <label for="form-institution">
+							Institution*
+						</label>
+				        <div class="form-element">
+				        	<input type="text" name="institution" id="form-institution">
+				        </div>
+			        </div>
+
+					<!-- EMAIL -->
+                    <div class="form-item">
+				        <label for="form-email">
+							Email*
+						</label>
+				        <div class="form-element">
+				        	<input type="text" name="email" id="form-email">
+				        </div>
+			        </div>
+
+					<!-- MOBILE -->
+                    <div class="form-item">
+				        <label for="form-mobile">
+							Mobile*
+						</label>
+				        <div class="form-element">
+				        	<input type="text" name="mobile" id="form-mobile">
+				        </div>
+			        </div>
+
+					<!-- MESSAGE -->
+			        <div class="form-item">
+			            <label for="form-message">
+							Message*
+						</label>
+			            <div class="form-element">
+			            	<textarea id="form-message" name="messgae" rows="10"></textarea>
+			            </div>
+			        </div>
+			    </fieldset>
+
+				<!-- BUTTON: SUBMIT -->
+			    <fieldset>
+			        <button id="submit">
+						SUBMIT
+					</button>
+			    </fieldset>
+			</form>
+
+			<!-- CONTROLS -->
+            <div class="controls">
+                <div class="dot"></div>
+                <div class="dot active"></div>
+            </div>
+          
+            <!-- ARROWS -->
+            <div class="arrows">
+                <button class="go-to-intentions">
+                    <!-- BACK -->
+                    <div class="h3">
+
+                        <!-- FOREGROUND -->
+                        <h3 class="foreground">
+                            &nbsp;<&nbsp;
+                        </h3>
+
+                        <!-- MIDDLEGROUND -->
+                        <h3 class="middleground">
+                            &nbsp;&nbsp;&nbsp;
+                        </h3>
+                    </div>
+                </button>          
+            </div>
+		</section>
+
+
+		<!-- SECTION: THANKS FOR CONTACTING US -->
+		<section class="thank-you">
+			<p>
+				THANKS FOR CONTACTING&nbsp;
+				<strong>
+					GIRL CODE AUSTRALIA.
+				</strong>
+			</p>
+		</section>
+
+		
+		<!-- FOOTER -->
+		<footer class="footer">
+
+			<!-- LOGO -->
+			<div>
+				<a href="index.html">
+					<img src="images/navigation/logo-coral.png" alt="Girl Code Australia">
+				</a>
+				<p>
+					<strong> 
+						Girl Code Australia 
+					</strong>
+				</p>
+				<p> 
+					ABN 32 239 446 736 
+				</p>
+			</div>			
+
+			<!-- CONTACT US -->
+			<div class="contact"> 
+
+				<!-- CONTACT US -->
+				<a href="contact-us.html">
+					<p>
+						<strong>
+							Contact Us	
+						</strong>
+					</p>
+				</a>
+
+				<!-- LINKS -->
+				<div class="links">
+
+					<!-- LEFT-HAND-SIDE -->
+					<p class="lhs">
+
+						<!-- WEBSITE (LEFT-HAND-SIDE) -->
+						<a href="index.html">
+							www.<strong>girlcodeaus</strong>
+						</a>
+
+						<!-- EMAIL (LEFT-HAND-SIDE) -->
+						<a href="mailto:hello@girlcodeaus.com">
+							hello@<strong>girlcodeaus</strong>
+						</a>
+
+						<!-- INSTAGRAM -->
+						<a href="http://www.instagram.com/girlcodeaus">
+							www.instagram.com/<strong>girlcodeaus</strong>
+						</a>
+
+						<!-- LINKEDIN -->
+						<a href="http://www.linkedin.com/company/girlcodeaus">
+							www.linkedin.com/company/<strong>girlcodeaus</strong>
+						</a>
+					</p>
+
+					<!-- RIGHT-HAND-SIDE -->
+					<p class="rhs">
+
+						<!-- WEBSITE (RIGHT-HAND-SIDE) -->
+						<a href="index.html">
+							.com
+						</a>
+
+						<!-- EMAIL (RIGHT-HAND-SIDE) -->
+						<a href="mailto:hello@girlcodeaus.com">
+							.com
+						</a>
+					</p>
+				</div>
+			</div>
+		</footer>
+
+
+		<!-- JAVASCRIPT -->
+		<script src="js/script.js"></script>
+    </body>
+</html>

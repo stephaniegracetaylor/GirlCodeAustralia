@@ -1,5 +1,5 @@
 
-# Website Implementation: Girl Code Australia
+# Website: Girl Code Australia
 
 Girl Code Australia aims to inspire female secondary students to pursue a career in computer science, information technology and software engineering. Girl Code Australia seeks to educate and empower females with the essential skills, knowledge and confidence to thrive in technology-related industries. 
 
